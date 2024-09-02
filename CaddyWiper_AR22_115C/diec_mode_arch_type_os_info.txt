@@ -1,0 +1,9 @@
+Info: 
+    File name: /home/remnux/Desktop/cisa_case/CaddyWiper_AR22_115C/a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea.exe
+    Size: 9216
+    Operation system: Windows(XP)
+    Architecture: I386
+    Mode: 32-bit
+    Type: GUI
+    Endianness: LE
+

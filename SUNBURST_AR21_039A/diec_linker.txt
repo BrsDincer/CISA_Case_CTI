@@ -1,0 +1,9 @@
+[*] Pattern validated: 20????????66
+PE32
+    Linker: Microsoft Linker
+    Compiler: VB.NET
+    Library: .NET(v4.0.30319)
+    [1;35mSign tool: Windows Authenticode(2.0)[PKCS #7][0m
+    [0;31mProtection: Obfuscation(Heuristic)[0m
+MSDOS
+

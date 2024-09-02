@@ -1,0 +1,131 @@
+
+
+FLARE FLOSS RESULTS (version v3.1.0-0-gdb9af41)
+
++-------------------------------------------+----------------------------------------------------------------------------------+
+| file path                                 | a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea.exe             |
+| start date                                | 2024-08-22 18:02:01                                                              |
+| runtime                                   | 00:06                                                                            |
+| version                                   | v3.1.0-0-gdb9af41                                                                |
+| identified language                       | unknown                                                                          |
+| imagebase                                 | 0x400000                                                                         |
+| min string length                         | 4                                                                                |
+| extracted strings                         |                                                                                  |
+|  static strings                           | Disabled                                                                         |
+|   language strings                        | 0 (0 characters)                                                                 |
+|  stack strings                            | 38                                                                               |
+|  tight strings                            | 0                                                                                |
+|  decoded strings                          | 11                                                                               |
+| analyzed functions                        |                                                                                  |
+|  discovered                               | 10                                                                               |
+|  library                                  | 0                                                                                |
+|  stack strings                            | 8                                                                                |
+|  tight strings                            | 2                                                                                |
+|  decoded strings                          | 10                                                                               |
+|   identified decoding functions           | 0x401530 (0.950, xrefs_to: 50), 0x402b10 (0.804, xrefs_to: 6), 0x4014b0 (0.764,  |
+|   (offset, score, and number of xrefs to) | xrefs_to: 2), 0x402a80 (0.751, xrefs_to: 12), 0x4022a0 (0.634, xrefs_to: 6),     |
+|                                           | 0x4011d0 (0.554, xrefs_to: 2), 0x401000 (0.543, xrefs_to: 0), 0x401750 (0.472,   |
+|                                           | xrefs_to: 4), 0x401a10 (0.472, xrefs_to: 4), 0x401510 (0.456, xrefs_to: 2)       |
++-------------------------------------------+----------------------------------------------------------------------------------+
+
+
+ ────────────────────────── 
+  FLOSS STACK STRINGS (38)  
+ ────────────────────────── 
+
+ Function | Function Offset | Frame Offset | String                    
+----------+-----------------+--------------+---------------------------
+ 0x401000 | 0x401530        | 0x48         | advapi32.dll              
+ 0x401000 | 0x401530        | 0x30         | LoadLibraryA              
+ 0x401000 | 0x401530        | 0x1c         | kernel32.dll              
+ 0x401000 | 0x0             | 0x64         | netapi32.dll              
+ 0x401000 | 0x4022a0        | 0x54         | C:\Users                  
+ 0x401000 | 0x401191        | 0x1e         | \kernel32.dll             
+ 0x4011d0 | 0x401530        | 0x40         | DeviceIoControl           
+ 0x4011d0 | 0x401530        | 0x30         | CreateFileW               
+ 0x4011d0 | 0x401530        | 0x26         | Wkernel32.dll             
+ 0x4011d0 | 0x401530        | 0x800        | CloseHandle               
+ 0x4011d0 | 0x40141b        | 0x68         | \.\PHYSICALDRIVE9         
+ 0x401750 | 0x401530        | 0x70         | LookupPrivilegeValueA     
+ 0x401750 | 0x401530        | 0x8c         | advapi32.dll              
+ 0x401750 | 0x401530        | 0x48         | AdjustTokenPrivileges     
+ 0x401750 | 0x401530        | 0x2c         | GetLastError              
+ 0x401750 | 0x401530        | 0x1c         | kernel32.dll              
+ 0x401a10 | 0x401530        | 0xac         | SetEntriesInAclA          
+ 0x401a10 | 0x401530        | 0x170        | advapi32.dll              
+ 0x401a10 | 0x401530        | 0x90         | AllocateAndInitializeSid  
+ 0x401a10 | 0x401530        | 0x154        | SetNamedSecurityInfoA     
+ 0x401a10 | 0x401530        | 0x13c        | GetCurrentProcess         
+ 0x401a10 | 0x401530        | 0x48         | kernel32.dll              
+ 0x401a10 | 0x401530        | 0x2c         | OpenProcessToken          
+ 0x401a10 | 0x401530        | 0x74         | FreeSid                   
+ 0x401a10 | 0x401530        | 0x60         | LocalFree                 
+ 0x401a10 | 0x401530        | 0xc8         | CloseHandle               
+ 0x401a10 | 0x401750        | 0xe4         | SeTakeOwnershipPrivilege  
+ 0x4022a0 | 0x401530        | 0x46c        | FindFirstFileA            
+ 0x4022a0 | 0x401530        | 0x44c        | kernel32.dll              
+ 0x4022a0 | 0x401530        | 0x8b0        | FindNextFileA             
+ 0x4022a0 | 0x401530        | 0xe3c        | CreateFileA               
+ 0x4022a0 | 0x401530        | 0xe18        | GetFileSize               
+ 0x4022a0 | 0x401530        | 0x45c        | LocalAlloc                
+ 0x4022a0 | 0x401530        | 0x488        | SetFilePointer            
+ 0x4022a0 | 0x401530        | 0x1c         | WriteFile                 
+ 0x4022a0 | 0x401530        | 0x478        | LocalFree                 
+ 0x4022a0 | 0x401530        | 0xe2c        | CloseHandle               
+ 0x4022a0 | 0x401530        | 0x10         | FindClose                 
+
+
+ ───────────────────────── 
+  FLOSS TIGHT STRINGS (0)  
+ ───────────────────────── 
+
+
+
+ ──────────────────────────── 
+  FLOSS DECODED STRINGS (11)  
+ ──────────────────────────── 
+
++---------------------------+
+|  FUNCTION at 0x4022a0 (4) |
++---------------------------+
+
+ Offset  | Called At | String          
+---------+-----------+-----------------
+ [stack] | 0x401179  | C:\Users\       
+ [stack] | 0x401179  | C:\Users\*      
+ [stack] | 0x401179  | FindFirstFileA  
+ [stack] | 0x401179  | kernel32.dll    
+
+
++---------------------------+
+|  FUNCTION at 0x4011d0 (3) |
++---------------------------+
+
+ Offset  | Called At | String           
+---------+-----------+------------------
+ [stack] | 0x4011bf  | DeviceIoControl  
+ [stack] | 0x4011bf  | CreateFileW      
+ [stack] | 0x4011bf  | Wkernel32.dll    
+
+
++---------------------------+
+|  FUNCTION at 0x401750 (2) |
++---------------------------+
+
+ Offset  | Called At | String                 
+---------+-----------+------------------------
+ [stack] | 0x4020e1  | advapi32.dll           
+ [stack] | 0x4020e1  | LookupPrivilegeValueA  
+
+
++---------------------------+
+|  FUNCTION at 0x401a10 (2) |
++---------------------------+
+
+ Offset  | Called At | String            
+---------+-----------+-------------------
+ [stack] | 0x402951  | advapi32.dll      
+ [stack] | 0x402951  | SetEntriesInAclA  
+
+
+

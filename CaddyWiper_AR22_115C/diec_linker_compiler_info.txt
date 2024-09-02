@@ -1,0 +1,6 @@
+PE32
+    Linker: Microsoft Linker(10.00.30319)
+    Compiler: Microsoft Visual C/C++(16.00.30319)[LTCG/C++]
+    Tool: Visual Studio(2010)
+MSDOS
+

@@ -1,0 +1,29 @@
+---- ExifTool ----
+ExifTool Version Number         : 12.76
+Warning                         : Error processing PE data dictionary
+---- System ----
+File Name                       : a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea.exe
+Directory                       : .
+File Size                       : 9.2 kB
+File Modification Date/Time     : 2024:08:22 15:21:10-04:00
+File Access Date/Time           : 2024:08:22 15:41:41-04:00
+File Inode Change Date/Time     : 2024:08:22 15:23:10-04:00
+File Permissions                : -rw-rw-r--
+---- File ----
+File Type                       : Win32 EXE
+File Type Extension             : exe
+MIME Type                       : application/octet-stream
+---- EXE ----
+Machine Type                    : Intel 386 or later, and compatibles
+Time Stamp                      : 2022:03:14 03:19:36-04:00
+Image File Characteristics      : Executable, 32-bit
+PE Type                         : PE32
+Linker Version                  : 10.0
+Code Size                       : 7168
+Initialized Data Size           : 1024
+Uninitialized Data Size         : 0
+Entry Point                     : 0x1000
+OS Version                      : 5.1
+Image Version                   : 0.0
+Subsystem Version               : 5.1
+Subsystem                       : Windows GUI

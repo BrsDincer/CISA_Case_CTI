@@ -1,0 +1,303 @@
+
+=== MZ Header ===
+
+                     signature:                     "MZ"
+           bytes_in_last_block:        144          0x90
+                blocks_in_file:          3             3
+                    num_relocs:          0             0
+             header_paragraphs:          4             4
+          min_extra_paragraphs:          0             0
+          max_extra_paragraphs:      65535        0xffff
+                            ss:          0             0
+                            sp:        184          0xb8
+                      checksum:          0             0
+                            ip:          0             0
+                            cs:          0             0
+            reloc_table_offset:         64          0x40
+                overlay_number:          0             0
+                     reserved0:          0             0
+                        oem_id:          0             0
+                      oem_info:          0             0
+                     reserved2:          0             0
+                     reserved3:          0             0
+                     reserved4:          0             0
+                     reserved5:          0             0
+                     reserved6:          0             0
+                        lfanew:        128          0x80
+
+=== DOS STUB ===
+
+00000000: 0e 1f ba 0e 00 b4 09 cd  21 b8 01 4c cd 21 54 68  |........!..L.!Th|
+00000010: 69 73 20 70 72 6f 67 72  61 6d 20 63 61 6e 6e 6f  |is program canno|
+00000020: 74 20 62 65 20 72 75 6e  20 69 6e 20 44 4f 53 20  |t be run in DOS |
+00000030: 6d 6f 64 65 2e 0d 0d 0a  24 00 00 00 00 00 00 00  |mode....$.......|
+
+=== PE Header ===
+
+                     signature:             "PE\x00\x00"
+
+# IMAGE_FILE_HEADER:
+                       Machine:        332         0x14c  x86
+              NumberOfSections:          3             3
+                 TimeDateStamp:    "2020-03-24 08:52:34"
+          PointerToSymbolTable:          0             0
+               NumberOfSymbols:          0             0
+          SizeOfOptionalHeader:        224          0xe0
+               Characteristics:       8226        0x2022  EXECUTABLE_IMAGE, LARGE_ADDRESS_AWARE
+                                                          DLL
+
+# IMAGE_OPTIONAL_HEADER32:
+                         Magic:        267         0x10b  32-bit executable
+                 LinkerVersion:                     48.0
+                    SizeOfCode:    1001472       0xf4800
+         SizeOfInitializedData:       2048         0x800
+       SizeOfUninitializedData:          0             0
+           AddressOfEntryPoint:    1008038       0xf61a6
+                    BaseOfCode:       8192        0x2000
+                    BaseOfData:    1015808       0xf8000
+                     ImageBase:  268435456    0x10000000
+              SectionAlignment:       8192        0x2000
+                 FileAlignment:        512         0x200
+        OperatingSystemVersion:                      4.0
+                  ImageVersion:                      0.0
+              SubsystemVersion:                      6.0
+                     Reserved1:          0             0
+                   SizeOfImage:    1032192       0xfc000
+                 SizeOfHeaders:        512         0x200
+                      CheckSum:    1014370       0xf7a62
+                     Subsystem:          3             3  WINDOWS_CUI
+            DllCharacteristics:      34144        0x8560  0x20, DYNAMIC_BASE, NX_COMPAT, NO_SEH
+                                                          TERMINAL_SERVER_AWARE
+            SizeOfStackReserve:    1048576      0x100000
+             SizeOfStackCommit:       4096        0x1000
+             SizeOfHeapReserve:    1048576      0x100000
+              SizeOfHeapCommit:       4096        0x1000
+                   LoaderFlags:          0             0
+           NumberOfRvaAndSizes:         16          0x10
+
+=== DATA DIRECTORY ===
+
+  EXPORT        rva:0x       0   size:0x        0
+  IMPORT        rva:0x   f6154   size:0x       4f
+  RESOURCE      rva:0x   f8000   size:0x      520
+  EXCEPTION     rva:0x       0   size:0x        0
+  SECURITY      rva:0x   f5200   size:0x     1b58
+  BASERELOC     rva:0x   fa000   size:0x        c
+  DEBUG         rva:0x   f601c   size:0x       1c
+  ARCHITECTURE  rva:0x       0   size:0x        0
+  GLOBALPTR     rva:0x       0   size:0x        0
+  TLS           rva:0x       0   size:0x        0
+  LOAD_CONFIG   rva:0x       0   size:0x        0
+  Bound_IAT     rva:0x       0   size:0x        0
+  IAT           rva:0x    2000   size:0x        8
+  Delay_IAT     rva:0x       0   size:0x        0
+  CLR_Header    rva:0x    2008   size:0x       48
+                rva:0x       0   size:0x        0
+
+=== SECTIONS ===
+
+  NAME          RVA      VSZ   RAW_SZ  RAW_PTR  nREL  REL_PTR nLINE LINE_PTR     FLAGS
+  .text        2000    f477c    f4800      200     0        0     0        0  60000020  R-X CODE
+  .rsrc       f8000      520      600    f4a00     0        0     0        0  40000040  R-- IDATA
+  .reloc      fa000        c      200    f5000     0        0     0        0  42000040  R-- IDATA DISCARDABLE
+
+=== SECURITY ===
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0f:e9:73:75:20:22:a6:06:ad:f2:a3:6e:34:5d:c0:ed
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Class 3 SHA256 Code Signing CA
+        Validity
+            Not Before: Jan 21 00:00:00 2020 GMT
+            Not After : Jan 20 23:59:59 2023 GMT
+        Subject: C=US, ST=Texas, L=Austin, O=Solarwinds Worldwide, LLC, CN=Solarwinds Worldwide, LLC
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:c5:1d:36:eb:d1:e3:7e:52:90:d8:11:e7:69:3f:
+                    81:64:a9:4e:50:96:67:12:45:8f:e5:38:62:6a:1b:
+                    45:48:73:18:6a:e0:46:1f:30:88:5e:93:e2:55:12:
+                    cf:be:39:af:54:c7:02:32:2b:31:06:f9:b9:94:c8:
+                    6f:af:5f:4d:7b:72:8f:e8:d4:3c:14:b8:3b:0a:11:
+                    19:3d:86:de:c3:de:4a:d9:68:7c:18:d7:07:e6:df:
+                    e7:26:1d:48:bc:e4:b0:ed:52:63:bd:58:06:44:93:
+                    38:5f:d4:9e:28:c2:47:e9:33:9a:ce:f3:43:9e:09:
+                    90:c6:b0:7a:cf:76:d1:c7:a3:f5:b7:f1:c8:c6:50:
+                    e7:80:7e:49:94:c5:35:b1:9d:93:f0:6d:4c:08:82:
+                    dc:91:5f:85:98:18:74:6c:0c:8f:24:1b:5e:59:a6:
+                    da:aa:c5:cd:20:92:80:c7:66:02:fd:a1:eb:7a:d7:
+                    fe:26:ce:cf:92:98:5d:bd:9a:ee:aa:bf:60:d4:5c:
+                    a6:0b:bf:e3:51:24:3e:58:c0:26:bd:dc:7c:80:47:
+                    29:c5:67:d6:33:59:eb:2b:93:65:63:85:9c:76:52:
+                    79:70:72:99:ef:47:cd:d5:f0:e9:5b:84:c7:17:01:
+                    81:8c:47:ed:ed:34:e8:05:68:2e:34:26:f1:68:c3:
+                    ab:71
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Key Usage: critical
+                Digital Signature
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://sv.symcb.com/sv.crl
+
+            X509v3 Certificate Policies: 
+                Policy: 2.23.140.1.4.1
+                  CPS: https://d.symcb.com/cps
+                  User Notice:
+                    Explicit Text: https://d.symcb.com/rpa
+
+            X509v3 Extended Key Usage: 
+                Code Signing
+            Authority Information Access: 
+                OCSP - URI:http://sv.symcd.com
+                CA Issuers - URI:http://sv.symcb.com/sv.crt
+
+            X509v3 Authority Key Identifier: 
+                keyid:96:3B:53:F0:79:33:97:AF:7D:83:EF:2E:2B:CC:CA:B7:86:1E:72:66
+
+            X509v3 Subject Key Identifier: 
+                A2:F3:B0:74:E8:67:60:F3:68:51:02:60:B1:C8:12:E9:C9:10:CE:60
+    Signature Algorithm: sha256WithRSAEncryption
+         90:3e:e3:67:fb:3a:6d:91:0f:63:7c:1b:e6:e2:db:59:37:43:
+         10:74:dd:be:07:f5:a7:99:05:52:7a:50:23:9b:96:c1:5b:99:
+         fb:52:f9:98:63:34:de:74:43:dc:19:de:0b:1d:fa:f9:8b:66:
+         42:39:55:7d:09:e4:11:ce:6e:fc:23:66:84:94:0a:e8:26:f9:
+         7e:ea:29:89:f0:29:e7:af:29:00:4f:d8:c6:70:84:bd:2a:79:
+         47:c1:b9:f3:f9:3e:51:1a:8f:a4:71:62:03:ad:62:41:c2:2e:
+         4c:2c:43:e7:10:18:02:a9:ed:74:78:26:7a:46:60:05:30:61:
+         72:dc:9b:9f:92:13:9c:a9:e7:bf:f0:6a:1d:6c:fa:f8:27:32:
+         37:19:fd:01:46:39:7f:df:5d:c1:50:c1:c4:e5:a2:ae:c8:36:
+         b5:7b:59:aa:c5:9d:4f:bb:25:5d:73:4c:ad:fd:c9:bf:b1:e4:
+         bf:34:e9:20:92:f5:5d:70:a6:d3:05:72:09:67:5e:22:1e:0d:
+         c5:c6:b7:c9:be:69:69:a1:55:6b:fe:d9:dd:ea:92:6e:19:f9:
+         ca:90:01:3f:c6:7b:be:57:ad:94:44:92:ea:17:78:2d:b0:35:
+         ed:74:06:49:22:ab:06:4f:0a:78:2a:19:be:61:f1:69:50:56:
+         f4:ec:6a:56
+
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            3d:78:d7:f9:76:49:60:b2:61:7d:f4:f0:1e:ca:86:2a
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, O=VeriSign, Inc., OU=VeriSign Trust Network, OU=(c) 2006 VeriSign, Inc. - For authorized use only, CN=VeriSign Class 3 Public Primary Certification Authority - G5
+        Validity
+            Not Before: Dec 10 00:00:00 2013 GMT
+            Not After : Dec  9 23:59:59 2023 GMT
+        Subject: C=US, O=Symantec Corporation, OU=Symantec Trust Network, CN=Symantec Class 3 SHA256 Code Signing CA
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:97:83:1e:00:16:af:2c:b1:d2:08:c4:d7:68:93:
+                    51:60:1e:71:f6:e2:47:b4:db:58:4d:23:62:6a:b4:
+                    bf:5a:1b:51:f7:a3:0d:18:77:68:bb:d8:36:ab:2f:
+                    21:50:da:9e:f3:e7:5f:27:4e:0b:c2:97:c8:09:70:
+                    93:a9:da:5c:0d:4e:a4:0d:91:a0:b4:ec:14:ce:91:
+                    72:54:2e:ce:a3:db:44:e9:52:1b:3f:41:3c:ca:4a:
+                    e4:aa:c0:e8:39:ab:53:cc:21:d0:cc:cf:7f:9b:e6:
+                    c2:cc:58:6a:82:15:ee:3d:36:cf:1c:c5:97:07:24:
+                    8e:f1:7b:be:31:2d:3d:6e:dc:b5:99:42:9f:4b:61:
+                    95:5f:1c:70:ee:17:7d:db:8b:e5:61:89:78:c7:68:
+                    1b:af:11:78:1a:98:ae:c4:55:47:53:d9:b3:32:d6:
+                    a1:0e:46:40:c5:97:92:8a:d1:53:a7:99:5b:85:35:
+                    57:d3:ea:93:62:61:20:0a:c7:30:77:24:11:4d:62:
+                    83:b6:ba:7b:68:82:31:ee:65:ca:df:f9:d5:8d:b2:
+                    35:dc:8c:2b:6f:6a:72:5c:60:84:9c:f2:0c:94:5e:
+                    c0:56:52:00:48:cc:d3:f8:a5:7d:de:2f:d7:13:e4:
+                    38:a8:84:d5:46:b8:13:86:c2:1b:9d:ea:5a:38:dd:
+                    9b:db
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            Authority Information Access: 
+                OCSP - URI:http://s2.symcb.com
+
+            X509v3 Basic Constraints: critical
+                CA:TRUE, pathlen:0
+            X509v3 Certificate Policies: 
+                Policy: 2.16.840.1.113733.1.7.23.3
+                  CPS: http://www.symauth.com/cps
+                  User Notice:
+                    Explicit Text: http://www.symauth.com/rpa
+
+            X509v3 CRL Distribution Points: 
+
+                Full Name:
+                  URI:http://s1.symcb.com/pca3-g5.crl
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication, Code Signing
+            X509v3 Key Usage: critical
+                Certificate Sign, CRL Sign
+            X509v3 Subject Alternative Name: 
+                DirName:/CN=SymantecPKI-1-567
+            X509v3 Subject Key Identifier: 
+                96:3B:53:F0:79:33:97:AF:7D:83:EF:2E:2B:CC:CA:B7:86:1E:72:66
+            X509v3 Authority Key Identifier: 
+                keyid:7F:D3:65:A7:C2:DD:EC:BB:F0:30:09:F3:43:39:FA:02:AF:33:31:33
+
+    Signature Algorithm: sha256WithRSAEncryption
+         13:85:1a:1e:69:a9:37:f7:a0:bd:a4:af:7e:1d:61:53:fe:9d:
+         8c:5e:0c:a6:75:1e:78:17:23:dd:fd:ec:1a:03:55:39:fb:71:
+         95:c7:65:5a:a7:8e:30:d2:44:5a:61:db:70:6f:da:21:05:c2:
+         2e:73:ba:49:f1:d1:93:fe:5d:c9:cd:5e:03:e0:89:9e:3f:74:
+         1e:d7:f7:38:8b:a9:d6:cf:bb:35:2f:33:58:a8:92:56:d1:c8:
+         4d:3b:82:e6:79:84:16:fc:28:b0:b1:47:f3:1d:a2:3e:ee:87:
+         d9:a6:7f:a4:56:a5:3f:ad:84:2e:29:de:7c:bc:a8:aa:a3:3d:
+         04:01:ea:ba:93:a2:0e:50:22:29:17:4c:87:e4:3a:11:5f:d6:
+         a4:25:89:9b:05:6b:2f:b4:c9:01:4c:27:7b:0b:ac:19:05:22:
+         a0:60:15:3f:da:c9:fb:4d:4c:8f:fb:72:67:77:fd:27:94:c7:
+         ba:35:0e:88:49:fe:8d:fd:28:af:4a:12:bd:0d:b3:97:05:de:
+         44:0c:15:fa:36:2b:03:dc:c1:50:01:f1:a1:11:5d:14:e5:e2:
+         bd:27:4b:54:be:2b:84:5e:0f:a6:c3:74:05:0a:ef:97:c3:89:
+         22:b1:1f:77:f3:bd:cd:43:d4:f1:4c:a9:3f:b5:8b:84:af:64:
+         f2:d0:14:21
+
+
+=== RESOURCES ===
+
+FILE_OFFSET    CP  LANG     SIZE  TYPE          NAME
+    0xf4a58     0     0     1218  VERSION       #1
+
+=== IMPORTS ===
+
+MODULE_NAME      HINT   ORD  FUNCTION_NAME
+mscoree.dll         0        _CorDllMain
+
+=== VERSION INFO ===
+
+# VS_FIXEDFILEINFO:
+  FileVersion         :  2019.4.5200.9083
+  ProductVersion      :  2019.4.5200.9083
+  StrucVersion        :  0x10000
+  FileFlagsMask       :  0x3f
+  FileFlags           :  0
+  FileOS              :  4
+  FileType            :  2
+  FileSubtype         :  0
+
+  VarFileInfo         :  [ 0x0, 0x4b0 ]
+
+# StringTable 000004b0:
+  Comments            :  ""
+  CompanyName         :  "SolarWinds Worldwide, LLC."
+  FileDescription     :  "SolarWinds.Orion.Core.BusinessLayer"
+  FileVersion         :  "2019.4.5200.9083"
+  InternalName        :  "SolarWinds.Orion.Core.BusinessLayer.dll"
+  LegalCopyright      :  "Copyright © 1999-2020 SolarWinds Worldwide, LLC. All Rights Reserved."
+  LegalTrademarks     :  ""
+  OriginalFilename    :  "SolarWinds.Orion.Core.BusinessLayer.dll"
+  ProductName         :  "SolarWinds.Orion.Core.BusinessLayer"
+  ProductVersion      :  "2019.4.5200.9083"
+  Assembly Version    :  "2019.4.5200.9083"
+
+=== Packer / Compiler ===
+
+  .NET DLL (MS)

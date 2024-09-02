@@ -1,0 +1,6 @@
+Total 5.58283: not packed
+  0|PE Header|0|512|2.89352: not packed
+  1|Section(0)['.text']|512|1001472|5.56922: not packed
+  2|Section(1)['.rsrc']|1001984|1536|3.01665: not packed
+  3|Section(2)['.reloc']|1003520|512|0.104728: not packed
+  4|Overlay|1004032|7000|7.32754: packed

@@ -1,0 +1,47 @@
+---- ExifTool ----
+ExifTool Version Number         : 12.76
+---- File ----
+File Name                       : task5.dll
+Directory                       : .
+File Size                       : 1011 kB
+File Modification Date/Time     : 2023:02:24 10:17:14-05:00
+File Access Date/Time           : 2024:09:02 05:30:49-04:00
+File Inode Change Date/Time     : 2024:09:02 05:25:16-04:00
+File Permissions                : -rw-r--r--
+File Type                       : Win32 DLL
+File Type Extension             : dll
+MIME Type                       : application/octet-stream
+---- EXE ----
+Machine Type                    : Intel 386 or later, and compatibles
+Time Stamp                      : 2020:03:24 04:52:34-04:00
+Image File Characteristics      : Executable, Large address aware, DLL
+PE Type                         : PE32
+Linker Version                  : 48.0
+Code Size                       : 1001472
+Initialized Data Size           : 2048
+Uninitialized Data Size         : 0
+Entry Point                     : 0xf61a6
+OS Version                      : 4.0
+Image Version                   : 0.0
+Subsystem Version               : 6.0
+Subsystem                       : Windows command line
+File Version Number             : 2019.4.5200.9083
+Product Version Number          : 2019.4.5200.9083
+File Flags Mask                 : 0x003f
+File Flags                      : (none)
+File OS                         : Win32
+Object File Type                : Dynamic link library
+File Subtype                    : 0
+Language Code                   : Neutral
+Character Set                   : Unicode
+Comments                        : 
+Company Name                    : SolarWinds Worldwide, LLC.
+File Description                : SolarWinds.Orion.Core.BusinessLayer
+File Version                    : 2019.4.5200.9083
+Internal Name                   : SolarWinds.Orion.Core.BusinessLayer.dll
+Legal Copyright                 : Copyright © 1999-2020 SolarWinds Worldwide, LLC. All Rights Reserved.
+Legal Trademarks                : 
+Original File Name              : SolarWinds.Orion.Core.BusinessLayer.dll
+Product Name                    : SolarWinds.Orion.Core.BusinessLayer
+Product Version                 : 2019.4.5200.9083
+Assembly Version                : 2019.4.5200.9083

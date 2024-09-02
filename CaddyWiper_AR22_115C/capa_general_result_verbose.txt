@@ -1,0 +1,42 @@
+md5                     42e52b8daf63e6e26c3aa91e7e971492
+sha1                    98b3fb74b3e8b3f9b05a82473551c5a77b576d54
+sha256                  a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea
+path                    /home/remnux/Desktop/cisa_case/CaddyWiper_AR22_115C/a294620543334a721a2ae8eaaf9680a0786f4b9a216d75b55cfd28f39e9430ea.exe
+timestamp               2024-08-22 17:03:48.389977
+capa version            7.0.1
+os                      windows
+format                  pe
+arch                    i386
+analysis                static
+extractor               VivisectFeatureExtractor
+base address            0x400000
+rules                   /tmp/_MEIRV3myQ/rules
+function count          10
+library function count  0
+total feature count     809
+
+contain obfuscated stackstrings (8 matches)
+namespace  anti-analysis/obfuscation/string/stackstring
+scope      basic block
+matches    0x401000
+           0x40114A
+           0x4011D0
+           0x401750
+           0x401A10
+           0x402025
+           0x40215E
+           0x4022A0
+
+get domain information
+namespace    host-interaction/network/domain
+description  Detect collection of Windows domain information
+scope        function
+matches      0x401000
+
+access PEB ldr_data
+namespace  linking/runtime-linking
+scope      basic block
+matches    0x401530
+
+
+
